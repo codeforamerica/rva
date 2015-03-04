@@ -19,11 +19,16 @@ h1 {
 }
 p, h2 { max-width:30rem; }
 p strong { font-weight:600; }
-aside {
-  font-size:.8rem;
-  line-height:1.2rem;
+aside,
+figure {
+  font-size:.75rem;
+  font-weight:400;
+  line-height:1.1rem;
   font-style:italic;
+  color:#555;
+  text-align:right;
 }
+figure { margin:0; }
 blockquote {
   background-color:#f1f1f1;
   padding:1.5rem 1rem;
@@ -51,16 +56,20 @@ a {
     margin:auto;
     max-width:45rem;
   }
-  .container img {
+  .container figure {
     max-width:30rem;
     float:right;
     margin-left:.8rem;
+  }
+  figure img {
+    width:100%;
   }
   aside {
     width:14rem;
     float:right;
   }
-  aside img { margin-bottom:.7rem; }
+  aside img,
+  figure img { margin-bottom:.3rem; }
 }
 
 footer {
