@@ -39,9 +39,9 @@ img {
 }
 a {
   text-decoration: none;
-  border-bottom:1px solid #c0c0c0;
+  border-bottom:1px solid #399fd3;
   font-weight:300;
-  color:#999;
+  color:#399fd3;
 }
 
 @media (min-width:960px) {
@@ -61,4 +61,18 @@ a {
     float:right;
   }
   aside img { margin-bottom:.7rem; }
+}
+
+.numbertable td {
+  font-weight: 300;
+  font-size: 18px;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.numbertable td:first-child {
+  align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #cf1b41;
 }
