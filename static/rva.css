@@ -120,3 +120,20 @@ nav a {
   top:10px;
   right:10px;
 }
+
+/* these styles are used only for printing */
+@media print {
+  html,
+  .numbertable td,
+  .numbertable td:first-child { font-size:14px; }
+  body { 
+    background-color:white;
+    line-height:1.4rem;
+  }
+  h1 { margin-top:30px; }
+  p { max-width:40rem; }
+  h2 { font-size:1.1rem; }
+  figure, aside, nav, img { display:none; }
+  footer { background-color:white; }
+  footer p { color:black; }
+}
