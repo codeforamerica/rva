@@ -1,5 +1,7 @@
 # [RVA](http://codeforamerica.github.io/rva/)
 
+![the team](img/the_team.jpg)
+
 Welcome to Team Richmond's website! This repository serves two purposes. It is a...
 
 1. **website** for the 2015 Richmond, VA Code for America Fellowship Team to document our time spent as fellows and share what we've learned, and a
