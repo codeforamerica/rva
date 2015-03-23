@@ -1,6 +1,6 @@
 # [RVA](http://codeforamerica.github.io/rva/)
 
-![the team](img/the_team.png)
+![the team](img/the_team.jpg)
 
 Welcome to Team Richmond's website! This repository serves two purposes. It is a...
 
