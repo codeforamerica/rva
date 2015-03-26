@@ -1,0 +1,13 @@
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container home">
+      {{ page.content }}
+      <ul>
+      {% for weight in (1..10) %}{% for p in site.pages %}{% if p.weight == weight %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endif %}{% endfor %}{% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
