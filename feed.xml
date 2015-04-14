@@ -1,0 +1,27 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ site.name | xml_escape }}</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>    
+    <link>http://rva.codeforamerica.org/</link>
+    <atom:link href="http://rva.codeforamerica.org/feed.xml" rel="self" type="application/rss+xml" />
+    
+    {% for weight in (1..10) %}{% for p in site.pages %}{% if p.weight == weight %}
+      <item>
+        <title>{{ p.title | xml_escape }}</title>
+          <dc:creator>Team RVA</dc:creator>
+        {% if p.excerpt %}
+          <description>{{ p.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ p.content | xml_escape }}</description>
+        {% endif %}
+        <pubDate>{{ p.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>http://rva.codeforamerica.org{{ p.url }}</link>
+        <guid isPermaLink="true">http://rva.codeforamerica.org{{ p.url }}</guid>
+      </item>
+    {% endif %}{% endfor %}{% endfor %}
+
+  </channel>
+</rss>
