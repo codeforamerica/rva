@@ -27,6 +27,7 @@ h1 {
   font-weight:900;
   line-height:1.2em;
 }
+h1, h2, h3, h4, h5, h6 { position:relative; }
 p, h2 { max-width:30rem; }
 p strong { font-weight:600; }
 aside,
@@ -51,11 +52,13 @@ img {
   height:auto;
   width:100%;
 }
-a {
+a,
+.fake-link {
   text-decoration: none;
   border-bottom:1px solid #399fd3;
   font-weight:300;
   color:#399fd3;
+  cursor:pointer;
 }
 
 @media (min-width:960px) {
@@ -69,6 +72,11 @@ a {
     max-width:30rem;
     float:right;
     margin-left:.8rem;
+  }
+  .container figure.full {
+    max-width:100%;
+    float:none;
+    margin:auto;
   }
   figure,
   aside {
@@ -95,6 +103,36 @@ a {
   font-weight: 600;
   font-size: 24px;
   color: #cf1b41;
+}
+
+
+/* count headers */
+.number {
+  position:absolute;
+  width:40px;
+  height:40px;
+  display:table;
+  background:#cf1b41;
+  border-radius: 50%;
+  left:-60px;
+  top:-8px;
+}
+.number-inner {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  color:#e5e5e5;
+  line-height:0;
+}
+
+.pre-title {
+  position:absolute;
+  top:-20px;
+  font-size:.52em;
+  font-weight:400;
+  text-transform:uppercase;
+  font-style:italic;
+  color:#999;
 }
 
 footer {
@@ -138,7 +176,7 @@ nav a {
   cursor:pointer;
 }
 #email-signup {
-  position:absolute;
+  position:fixed;
   display:none;
   top:0;
   width:100%;
