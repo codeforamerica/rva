@@ -155,7 +155,22 @@ a,
 
 /*
 **
-** GLOBALS
+** IMAGE HALVES
+**
+*/
+@media (min-width:960px) {
+  img.half {
+    width:50%;
+    float:left;
+    margin-bottom:1em;
+  }
+}
+
+
+
+/*
+**
+** HORIZONTAL BLOCKS (1 > 2 > 3 > 4)
 **
 */
 section {
