@@ -173,74 +173,36 @@ a,
 ** HORIZONTAL BLOCKS (1 > 2 > 3 > 4)
 **
 */
-section {
-  padding:3em;
-  background:#e5e5e5;
-}
-.block {
-  position:relative;
-  margin-top:2em;
-}
-.block-number {
-  position:absolute;
-  display:table;
-  left:-35px;
-  top:0;
-  width:25px;
-  height:25px;
-  background:#399fd3;
-  border-radius:50%;
-}
-.number-inner {
-  display:table-cell;
-  vertical-align: middle;
-  color:white;
-  text-align: center;
-  line-height: 0;
-  font-weight: 700;
-}
-.block-title {
-  margin:0; padding:0;
-  line-height:1.2em;
-  margin-bottom:1em;
-}
-.block-title span {
-  display:block;
-  font-weight:300;
-  font-size:.65em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-style:italic;
-  position:relative;
-}
-.block-description {
-  padding:0; margin:0; 
-  font-size:.8em;
-  line-height:1.4em;
-}
+section { padding:3em; background:#afafaf; position:relative;}
+
+.block-bar-positioner { position: absolute; left:1.5em;
+  height: 67.5%; }
+.block-bar { width: 0.25em; height:100%; background-color:#fff; }
+.block { position:relative; }
+.block + .block { margin-top:2em; }
+.block-number { position:absolute; display:table; left:-2.25em; top:-0.3em;
+  width: 1.75em; height: 1.75em; background:#fff; border-radius:50%; }
+.number-inner { display:table-cell; vertical-align: middle;
+  text-align: center; line-height: 0; font-weight: 300; }
+.block-title { margin:0; padding:0; line-height:1.2em; margin-bottom:1em; }
+.block-title span { display:block; font-weight:500; color: #fff;
+  font-size:.65em; letter-spacing: .1em; text-transform: uppercase;
+  position:relative; }
+.block-description { padding:0; margin:0; font-size:.8em; line-height:1.4em; }
+
 @media (min-width:960px) {
-  section {
-    padding:3em;
-    background:#e5e5e5;
-  }
-  .block {
-    float:left;
+  section { padding:3em; }
+  .block-bar-positioner { position: absolute; top:2.75em; width: 68%; 
+    padding-left: 2.5em; }
+  .block-bar { height: 0.25em; width:100%; background-color:#fff; }
+  .block { float:left;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    padding:1em 2em;
-    margin-top:0;
-    position:relative;
-  }
-  .block.quarter {
-    width:25%;
-  }
-  .block-number {
-    position:absolute;
-    display:table;
-    left:5px;
-    top:20px;
-  }
+    padding:1em 2em; position:relative; }
+  .block.quarter { width:25%; }
+  .block-number { position:absolute; display:table; left:0.5em; top:-1em; }
+  .block + .block { margin-top:0; }
 }
 
 /*
