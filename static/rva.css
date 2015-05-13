@@ -176,7 +176,7 @@ a,
 section { padding:3em; background:#afafaf; position:relative;}
 
 .block-bar-positioner { position: absolute; left:1.5em;
-  height: 67.5%; }
+  height: 72%; }
 .block-bar { width: 0.25em; height:100%; background-color:#fff; }
 .block { position:relative; }
 .block + .block { margin-top:2em; }
