@@ -1,0 +1,88 @@
+---
+layout: default
+title: May User Testing
+weight: 3
+header_img: 'header_may.jpg'
+date: Tuesday, 08 June 2015
+excerpt: 
+---
+<!-- main content -->
+
+<div class="container">
+  <h1>Thoughts after Round One of user research</h1>
+
+  <p>We’ve spent the last few weeks coding an early prototype application and testing it with users in Richmond! Here’s what we’ve built so far:</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-beta_prescreener.gif">
+  </div>
+  
+  <p>A <strong>pre-screening tool</strong> allows the user to input the most basic eligibility information and learn whether a patient is likely to qualify for each service. This isn’t a definitive answer, but it helps the patient figure out whether it’s worth filling out the full application.</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-beta_viewpatient_sherri.gif">
+  </div>
+  
+  <p>The <strong>full patient profile</strong> contains the questions currently found on the paper application forms for the health services we’re working with. We’re hoping that if all this information is filled out, it can replace the paper application for a patient.</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-beta_share.gif">
+  </div>
+  
+  <p>Initially, a patient’s information is only available to users at the organization that created the profile. If that organization wants to <strong>refer the patient</strong> to another service, they can use this feature to make the profile available to users there.</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-beta_findpatient.gif">
+  </div>
+  
+  <p>What happens if a community health worker creates a record for a patient at one of the resource centers in the public housing communities, and the patient later shows up at a clinic, but without an explicit referral from the resource center? The clinic could contact the resource center and ask them to share the patient’s information, but that could take a while. This feature would allow a clinic user to <strong>look up the patient</strong> by name and date of birth, but hides the rest of the patient’s information until the user confirms that they have the patient’s consent. After providing confirmation, the user can immediately access the information.</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-beta_viewhistory.gif">
+  </div>
+  
+  <p>Was this address updated last week or two years ago? Who can I contact if I have questions about an application filled out elsewhere? What other organizations have screened this patient? This section tracks <strong>changes to each patient’s profile</strong>, allowing users to check when each piece of information was added and by whom.</p>
+
+  <h2>User research!</h2>
+  
+  <p>Despite all the research we’ve done, anything we build at this stage is based on our assumptions, both explicit and implicit, about what users want and need. Only those users can tell us which are right and which are wrong, and we want to get that feedback early and often so that we can make sure what we build works for them. The main goal of our trip to Richmond at the end of May was user research. This usually means showing our prototype application to potential users and letting them navigate through it without too much direction, asking them about their expectations and thoughts at each step.</p>
+
+  <p>We focused on people in three different roles.</p>
+
+  <ul>
+    <li><strong>Screeners</strong>: the staff who review applications and determine whether a patient is eligible for care or where she falls on a sliding scale.</li>
+    <li><strong>Navigators</strong>: people who aren’t screeners, but help patients apply for health services. They include case managers and community health workers.</li>
+    <li><strong>Administrators</strong>: the leadership of the organizations we’re working with. They probably won’t use the application frequently themselves, but they can give us feedback on whether the application fits their organization’s larger goals and meets their funders’ requirements.</li>
+  </ul>
+
+  <h2>What we’ve learned</h2>
+
+  <p>Much of the user feedback focuses on UI details. For example, it doesn’t make sense to ask about the spouse’s employment status if the patient isn’t married. Or a dropdown for phone number type (home, cell, work, etc) would be easier than a text field. We want to fix these issues as quickly as possible to eliminate potential pain points. But most important are the big questions: What would you use this for? How does it aid or hinder your goals? What would prevent you from using the software today? What would make you want to start using it immediately?</p>
+
+  <p>Here are a few points we heard repeatedly:</p>
+
+  <ul>
+    <li>Having the screening questions in a web form makes things visually simpler than paper forms. But the questions themselves are often confusing. What “race” option do you choose for a Latino patient if “ethnicity” is a separate field? What counts as income? Which fields are required and which are optional?</li>
+    <li>It’s important to know whether another office received the information you sent them, so it’s good that the edit history page shows this. Users also want to know what happened next--was the patient approved? Did he make it to an appointment?</li>
+    <li>It would be really useful to see where else a patient has received care recently. Seeing what organizations have screened a patient hints at that, but isn’t comprehensive.</li>
+    <li>We need to avoid forcing users to enter data twice. At organizations where users currently enter data manually from paper forms into an electronic health record system, asking them to enter the same data into our application as well would mean adding lots of extra work.</li>
+  </ul>
+
+  <h2>What’s next?</h2>
+
+  <p>Ben is in Richmond this week, running another round of user research and then helping out the <a href="http://www.meetup.com/Code-for-RVA-Meetup/" target="_blank">Code for RVA Brigade</a> at <a href="http://hackforchange.org/" target="_blank">National Day of Civic Hacking</a> on Saturday. Sam and Emma are in San Francisco, preparing our mid-year presentation and report. After that, we’ll spend a few more weeks coding new features and adjusting existing ones based on user feedback before Sam travels back to Richmond the week of June 22nd for more user research and the <a href="https://www.eventbrite.com/e/richmond-latino-health-summit-cumbre-latina-de-salud-de-richmond-tickets-16865219325?aff=erelexpsim" target="_blank">Richmond Latino Health Summit</a>. Features at the top of our list include:</p>
+
+  <ul>
+    <li>A patient portal</li>
+    <li>Spanish translations</li>
+    <li>Robust auditing and logging</li>
+  </ul>
+  
+  <p>As always, you can follow our progress on <a href="http://github.com/codeforamerica/rva-screening" target="_blank">Github</a>!</p>
+
+</div>
