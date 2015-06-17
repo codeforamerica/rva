@@ -126,42 +126,141 @@
 
             <section id="problem">
                 <h2>Problem</h2>
-                <a href="/img/coverage-chart.svg"><img src="/img/coverage-chart.svg"></a>
+
                 <h3>Focus Area</h3>
+                <p>Our partners in Richmond asked us to focus on healthcare services for low-income residents.</p>
+                <blockquote>“More than one in four Richmond residents live in poverty. Many have minimal or no access to basic healthcare, causing illness and disease, that if left untreated, puts unnecessary burdens on the city's emergency rooms and hospitals. With the passing of the Affordable Care Act, it is important for newly enrolled residents to be empowered to take control of their health. The Code for America fellows will work to leverage and align the many components of Richmond's many healthcare systems to better serve the needs of low-income residents.”</blockquote>
+
                 <h3>Background</h3>
+                <p>This is what the health insurance landscape looks like in Virginia for low income people without employer-based insurance.</p>
+                <a href="/img/coverage-chart.svg"><img src="/img/coverage-chart.svg"></a>
+                <p>Because Virginia chose not to expand Medicaid under the Affordable Care Act, people with incomes in the blank area above still don’t have affordable insurance options, and some who qualify for subsidized marketplace plans still find the cost out of reach. Richmond also has a significant number of undocumented immigrants who aren’t eligible for any of the options above.</p>
+                <p>Richmond has a network of  low-cost clinics and care programs that do great work caring for patients who fall in these gaps, and everyone we met in Richmond wants to get uninsured patients into primary care and avoid preventable ER visits. Still, both patients and providers told us that the time and effort required to get an appointment discourages many people from using those services. Funding and clinical capacity are certainly part of the reason for wait times, but we also heard that the application process itself was often slow and frustrating for everyone involved. In order to focus limited resources on those who need it most, almost all safety net providers have an eligibility screening process that determines whether a patient is eligible for free or discounted care (the exception is Care-A-Van, a Bon Secours mobile clinic program). Often, the organization’s funders shape the eligibility criteria and conduct audits, so it’s important to document the decision.</p>
+
                 <h3>How Eligibility Screenings Works</h3>
+                <p>What kind of information do applications ask for?</p>
+                <ul>
+                    <li><strong>Income</strong>: Providers ask for the patient’s household size and household income and use this to calculate her income as a percentage of the Federal Poverty Level (FPL), then compare this to the organization’s cut-off or sliding scale. Asking someone for their household size and income sounds like it should be simple, but there are usually dozens of related questions. Some are used mostly to help staff determine if the answers are consistent. For example, if someone reports a very low income but doesn’t have a high food stamp allotment, it could indicate that something’s off. There are also subtly different ways of wording the questions, which could mean the same person answering differently on two forms. For example, the federal definition of “household size” is essentially the number of tax filers plus the number of dependents, but providers try to translate this for people who might not file taxes or might have lower literacy levels. As a result, one form says “people you are financially responsible for” while another says “family members in house.”</li>
+                    <li><strong>Income documentation</strong>: Screening usually requires patients to show documents that prove their income. This is really the most fundamental requirement (a Code for America team working on an alternative food stamp application process in California decided to eliminate income questions entirely, since they can infer the answers from the income documentation). Pay stubs are the most common choice, but they can be tricky. Sometimes patients haven’t kept two months’ worth of pay stubs because they didn’t think they would need them. Some people don’t have pay stubs because they’re paid under the table. Others work inconsistent hours, so their pay varies widely. Patients can also ask their employers for a letter stating their wages, but some employers won’t do that, especially if they hired the patient illegally. If you don’t have any income, you often need a notarized letter from someone who supports you (some services have notary publics on staff, making this easier than we initially imagined). Services work with patients to find something that makes sense--for example, some will accept a signed self-declaration of income if other options are unavailable--but it’s often a long process. Some providers use third-party systems like Experian or the Virginia Employment Commission to double-check patients’ employment or income, but they still ask patients to provide documentation.</li>
+                    <li><strong>Insurance eligibility</strong>: Providers want to encourage patients who are eligible for insurance to use those benefits rather than charity care, so it’s important to check whether a patient currently has insurance or might qualify for government programs. The requirements can be so complicated, though, that this isn’t always an easy question to answer.</li>
+                </ul>
+                <p>How does the screening process work right now?</p>
+
+                <p><strong>It can be slow and confusing</strong></p>
+                <p>No two organizations screen in exactly the same way, but here’s an example of a screening process at one primary care clinic:</p>
                 <a href="/img/april-comic-full.png">
                     <img class="half" src="/img/april-comic-1.png">
                     <img class="half" src="/img/april-comic-2.png">
                 </a>
+
+                <p><strong>It’s redundant</strong></p>
+                <p>If patients visit another provider, they usually have to go through a separate screening, even though the applications ask for most of the same information. A few providers share a form, but most don’t. Here’s an example:</p>
+                <a href="http://www.codeforamerica.org/blog/wp-content/uploads/2015/05/rva-redundancy-cfablog.png"><img src="http://www.codeforamerica.org/blog/wp-content/uploads/2015/05/rva-redundancy-cfablog.png"></a>
+
                 <h3>What this means</h3>
+                <p>For care providers, the status quo means spending lots of staff time on screening that could otherwise be spent on something more directly related to patient care. For patients, it means delays getting into care (which can mean that the ER is a better option). And the confusion and frustration damages patients’ trust in the healthcare system. Community members told us that application processes are confusing, it’s hard to get accurate and complete information about eligibility, people don’t understand why their applications are rejected, and it’s demoralizing to have to prove low income again and again.</p>
             </section>
 
             <section id="goals">
                 <h2>Goals &amp; Metrics</h2>
+                <p>Our goals are:</p>
+                <ul>
+                    <li>Decreasing the amount of time it takes patients to get through the eligibility screening process.</li>
+                    <li>Increasing patient trust and satisfaction.</li>
+                </ul>
             </section>
 
             <section id="progress">
                 <h2>Progress</h2>
+                <p>We’ve built a prototype application and started testing it with potential users in Richmond. Here’s what we’re working on.</p>
+                <p><strong>Online applications</strong>: patients often start an application at a clinic but don’t have all the necessary documentation, so they have to go back to the office another day--not always easy with limited transportation options. Our application has patient profiles containing the questions currently found on the paper application forms for the health services we’re working with. We’re hoping that if all this information is filled out, it can replace the paper application for a patient. Ideally, patients could fill out their entire application at home or at a resource center, and go to the clinic only for medical appointments.</p>
+[screenshots of patient details]
+                <p><strong>Share screening data</strong>: Initially, a patient’s information is only available to users at the organization that created the profile. If that organization wants to refer the patient to another service, they can use this feature to make the profile available to users there. Hopefully, this will mean that the patient doesn’t have to apply separately at the second organization, saving time for both the patient and staff.</p>
+[screenshots of sharing]
+                <p>What happens if a community health worker creates a record for a patient at one of the resource centers in the public housing communities, and the patient later shows up at a clinic, but without an explicit referral from the resource center? The clinic could contact the resource center and ask them to share the patient’s information, but that could take a while. This feature would allow a clinic user to look up the patient by name and date of birth, but hides the rest of the patient’s information until the user confirms that they have the patient’s consent. After providing confirmation, the user can immediately access the information.</p>
+[screenshots of consent popup]
+                <p>Was this address updated last week or two years ago? Who can I contact if I have questions about an application filled out elsewhere? What other organizations have screened this patient? This section tracks changes to each patient’s profile, allowing users to check when each piece of information was added and by whom.</p>
+[screenshots of edit history]
+                <p><strong>Pre-screening</strong>: because the process can be so long and frustrating, patients are sometimes reluctant to apply for services when they’re not sure if they’re likely to qualify. Meanwhile, providers told us that patients sometimes wait hours for a financial screening, only to find out that they’re not eligible, and the providers spend significant time processing those applications. The pre-screening tool allows patients to answer the most basic eligibility questions and tells them whether they’re likely to qualify. It’s not a definitive answer, but it can help the patient figure out whether it’s worth the time to fill out a complete application, which could be up to 100 questions. We hope this will encourage patients who qualify to apply, and save both patients and providers time by discouraging applications from patients who definitely won’t qualify.</p>
+[screenshots of prescreening]
+                <p><strong>Universal screening form</strong>: Some service providers in Richmond have been discussing creating a universal screening form for years. This doesn’t even need to be a technical project--just using the same paper form for all applications would be a huge step forward. It’s challenging to reconcile the different needs and constraints of all the organizations, but we’re hopeful that our project can be a catalyst for more coordination.</p>
             </section>
 
             <section id="process">
                 <h2>Process</h2>
                 <h3>Research Process</h3>
+                <p>A key part of Code for America’s approach is building with communities, not for them. During our initial research phase, we talked with over 100 people, including clinicians, social workers, community health workers, hospital and clinic administrators, technical staff at RCHD and the City of Richmond, academics, leaders at health-related nonprofits, and community members who use safety-net health services (a partial list of the organizations we’ve met with is below). We asked them about their experiences with safety-net health services in Richmond, their hopes and challenges, and how technology was helping or hindering them.</p>
+                <p>Several themes emerged, which we discussed in our February blog post.</p>
+                <ul>
+                    <li>It’s hard to keep track of all the available services, hard to figure out what you’re eligible for, and hard to apply</li>
+                    <li>Appointment scheduling is complicated</li>
+                    <li>Mental health is fundamental, but care is often difficult to access</li>
+                    <li>For some, the ER is a better option than primary care</li>
+                    <li>Service providers struggle to communicate with each other efficiently</li>
+                    <li>Richmond’s community health advocate program has huge potential</li>
+                </ul>
+                <p>We decided to focus on eligibility screening for several reasons:</p>
+                <ul>
+                    <li>Consistent feedback from patients, service providers, and navigators that a web application aimed at this process could help people get medical care faster and improve their experience with the health system.</li>
+                    <li>We haven’t found existing software that serves this purpose.</li>
+                    <li>The size of the project makes it feasible for three people to build in six months.</li>
+                </ul>
+                <p>As we’ve narrowed our focus, we’ve met with many of the same people again to get their feedback on our progress and future directions. In April, we organized a brainstorm session that included eligibility screening staff from six organizations.</p>
+                
                 <h3>Development and User Testing</h3>
+                <p>Despite all the research we’ve done, anything we build at this stage is based on our assumptions, both explicit and implicit, about what users want and need. Only those users can tell us which are right and which are wrong, and we want to get that feedback early and often so that we can make sure what we build works for them. Our last two trips to Richmond focused on user research. This usually means showing our prototype application to potential users and letting them navigate through it without too much direction, asking them about their expectations and thoughts at each step.</p>
+                <p>We focused on people in three different roles.</p>
+                <ul>
+                    <li><strong>Screeners</strong>: the staff who review applications and determine whether a patient is eligible for care or where she falls on a sliding scale.</li>
+                    <li><strong>Navigators</strong>: people who aren’t screeners, but help patients apply for health services. They include case managers and community health workers.</li>
+                    <li><strong>Administrators</strong>: the leadership of the organizations we’re working with. They probably won’t use the application frequently themselves, but they can give us feedback on whether the application fits their organization’s larger goals and meets their funders’ requirements.</li>
+                </ul>
+                <p>Much of the user feedback focuses on UI details. For example, it doesn’t make sense to ask about the spouse’s employment status if the patient isn’t married. Or a dropdown for phone number type (home, cell, work, etc) would be easier than a text field. We want to fix these issues as quickly as possible to eliminate potential pain points. But most important are the big questions: What would you use this for? How does it aid or hinder your goals? What would prevent you from using the software today? What would make you want to start using it immediately?</p>
+                
+                <h3>Technical Tools</h3>
+                <p>Our prototype is built with Python, Flask, and SQLAlchemy and hosted on Heroku. You can follow our coding progress on <a href="https://github.com/codeforamerica/rva-screening" target="_blank">Github</a>.</p>
+
                 <h3>Side Projects</h3>
                 <p><strong>Searchable Services</strong></p>
+                <p>The single most requested tool in our February meetings was an up-to-date, searchable list of all available services for low-income people in Richmond. Because services change so quickly, existing resources like the statewide 211 system tend to have incomplete or out of date information. Some case managers we met curated their own lists, but those aren’t publicly available.</p>
+                <p>Amber Haley and her team at the Center on Society and Health at VCU maintain a detailed Google Spreadsheet of resources in the city that includes services offered, contact information, and hours of operation. In March, we developed a searchable web-based list of services in Richmond that uses Amber’s spreadsheet as the database. This means that when she updates the spreadsheet, it automatically updates the website as well--no need to enter data into a separate system!</p>
+[screenshots of searchable services]
+                <p>After building this prototype, we decided not to develop it as our main project because of the number of companies and nonprofits already working on this problem. The last thing we wanted to do was create another out of date list of resources (<a href="https://xkcd.com/927/" target="_blank">see this comic</a>). Our current role in this project is to help our partners evaluate the existing companies in this sphere.</p>
+
                 <p><strong>CHW Projects</strong></p>
+                <p>One of Richmond’s more interesting initiatives is their support of a Community Health Worker (CHW) model within the public housing Courts. CHW’s are residents of the Courts themselves and work closely with residents to help them access resources and get basic care in the Resource Centers.</p>
+                <p>The CHW model is a relatively new approach to giving and receiving health. It is a much more holistic approach to health that compliments residents’ lifestyles by placing the Resource Centers within the Courts. We have learned a lot from working with the CHWs and have been looking for ways to help them do their job better. In February and March we saw many potential areas for improvement within the CHW’s workflows. Many of the projects are non-technical, therefore not necessarily prioritized for our work this year. We have <a href="https://docs.google.com/document/d/1J6VMazykUhd370UFSL800ezb6CnlPegwHxAih5foCa0/edit" target="_blank">curated a list of ideas</a> for the city so they can take action on them over time.</p>
+                <p>This small initiative has show the power and importance of shadowing and understanding those you are attempting to help. With just a few hours of shadowing we curated a list of about 20 project ideas, small and large, that would greatly improve the Resource Center’s effectiveness.</p>
+                <p><em>We have a few other projects that are small and light-weight but aren’t necessarily for the greater use of our fellowship. Take a look at the <a href="https://github.com/codeforamerica/fplapi" target="_blank">FPL API</a> and the <a href="https://github.com/codeforamerica/vdh-services-calculator" target="_blank">VDH Services Calculator</a>.</em></p>
+
                 <h3>Brigade & Community Events</h3>
+                <p>The Code for RVA Brigade is a relatively new group to the Brigade program at Code for America. In February we had the chance to be a part of their Code Across event hosted at <a href="http://www.inmunited.com/" target="_blank">INM United</a>. State government employees, local designers and programmers, and civic-minded community members gathered for a day of exploring how we can better serve our local government and help them better serve its constituency.</p>
+                <p>The attendees broke out into different groups based on interests and skillsets to work on projects ranging from gathering local <a href="https://github.com/codeforrva/sti" target="_blank">STI testing center locations</a> to deploying a <a href="https://github.com/codeforrva/mrelief_snap_screener_example" target="_blank">SNAP benefits pre-screener</a> tool. The cross collaboration between residents and government officials led to an afternoon of exciting collaboration and learning for everyone involved.</p>
+
             </section>
 
             <section id="next">
                 <h2>Next Steps</h2>
+                <p>We’ll continue cycles of development and user testing over the next few months. Our goal is to finish the bulk of major feature development and begin testing with real patients by mid-August so that we can spend the remainder of the year refining the application based on feedback. Major areas of research and development moving forward include:</p>
+
                 <h3>Application Questions</h3>
+                <p>Currently, our app has all of the shared questions between the eligibility forms. We want to ask only what is necessary for approval, but also recognize clinics and organizations want to ask other questions so they can collect specific data for things such as grant applications and funder reports. We plan to incorporate clinic-specific questions as extra pages in the app, but they won’t be required to calculate eligibility or send information.</p>
+                
                 <h3>Translation</h3>
+                <p>Richmond has a growing  immigrant population, and the organizations we’re working with serve many patients who don’t speak English. We’re currently building a full translation feature into the app so that screeners or navigators can walk patients through the process in Spanish. We’ll demo it at the Richmond Latino Health Summit on June 24th.</p>
+
                 <h3>Analytics</h3>
+                <p>The administrators of the organizations we’re working with track a range of metrics to guide their work and show to funders. We’re working with them to figure out what data our application could export that would be helpful to them. For example, tracking the organizations that access each patient’s data could allow them to visualize the network of services their patients are accessing.</p>
+
                 <h3>Avoiding double data entry</h3>
-                <h3>Consent & HIPAA compliance</h3>
+                <p>We need to avoid forcing users to enter data twice. At organizations where users currently enter eligibility data manually into an electronic health record (EHR) system, asking them to enter the same data into our application as well could mean adding lots of extra work. There are a few options here:</p>
+                <ol>
+                    <li>Focus the application on referral cases rather than asking clinics to use it for every patient who walks in.</li>
+                    <li>Find ways to import or export information from existing systems.</li>
+                </ol>
+
+                <h3>Consent &amp; HIPAA compliance</h3>
+                <p>It’s crucial to ensure that all data sharing in our application is HIPAA-compliant. We’re researching ways to structure HIPAA agreements for patients and organizations that make everyone comfortable without adding more overhead than necessary.</p>
             </section>
 
             <section id="conclusion">
