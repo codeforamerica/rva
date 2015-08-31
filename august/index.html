@@ -1,0 +1,62 @@
+---
+layout: default
+title: August Update
+weight: 6
+header_img: 'header_august.png'
+date: Monday, 31 August 2015
+excerpt:
+extra_js:
+  - /static/galerie.js
+---
+
+<div class="container">
+
+  <h1>August Update</h1>
+
+  <p>Our last two months have been busy with demo sessions and user research, including a field trip to the Fairfax County Health Department to learn about the successes and challenges of a similar system they’ve used since 2002. We’re in San Francisco now, coding away on new features and user interface adjustments based on that feedback! Highlights include:</p>
+  <ul>
+    <li>A combined search/add patient workflow to replace separate “search existing patients” and “add new patient” pages, because most users want to check whether a patient exists in the system before adding a new profile.</li>
+    <li>A view that highlights only the questions that determine a patient’s eligibility (such as income, household size, and insurance status) to help screening staff reach an eligibility decision more quickly.</li>
+    <li>A page that displays all of a patient’s past referrals and screening results, because users told us that it’s important to know where else someone has received care.</li>
+    <li>Patient lists on the homepage that help users find the patients they’re most likely to look for: recently edited patients, new referrals to the user’s organization, patients the user has referred elsewhere, etc.</li>
+    <li>A full Spanish version of the app, and infrastructure that makes it easy to add other languages later.</li>
+  </ul>
+
+  <p>Another new feature allows the user to show or hide form questions that are specific to certain organizations. In this example, the user can show questions from Access Now if she’s referring a patient there, or hide them if they’re not relevant for the current patient.</p>
+
+  <div class="screenshot">
+    <img src="/img/screenshot_header.png">
+    <img src="/img/rva-screener-service-specific-access-now.gif">
+  </div>
+
+  <p>However, you can imagine how quickly this becomes overwhelming when there are five or ten organizations listed and each has its own questions. We’re also analyzing the differences among the forms and discussing with those organizations whether it’s possible to make the forms more similar while still meeting funding and audit requirements. Here’s how the forms compare:</p>
+
+  <button class="galerie-button" onclick="previous_slide()">PREV</button>
+  <button class="galerie-button" onclick="next_slide()">NEXT</button>
+  
+  <div id="galerie-tracker-wrapper"></div>
+
+  <div class="galerie">
+    <div class="galerie-item galerie-current">
+      <span><strong>Questions about household size and structure</strong></span>
+      <img src="/img/eligibility-review-householdsize.png">
+    </div>
+    <div class="galerie-item">
+      <span><strong>Income Sources Requested</strong></span>
+      <img src="/img/eligibility-review-income-sources.png">
+    </div>
+    <div class="galerie-item">
+      <span><strong>Proof of Income documents (by name)</strong></span>
+      <img src="/img/eligibility-review-documents.png">
+    </div>
+  </div>
+
+  <p><small>Download the full review: <a target="_blank" href="/img/form_question_tabulations.pdf">A Comparison of Financial Screening Forms</a></small></p>
+
+  <p><strong>A side project</strong>: Community health workers in Richmond told us that texting is a convenient way for clients to ask them questions, but they don’t use it much because giving out their personal phone numbers would mean receiving large numbers of texts at all hours. As an experiment, we set up a third party web application called <a href="https://frontapp.com/" target="_blank">FrontApp</a> for one CHW, Shikita. It allows her to send and receive texts on Front’s website instead of her phone. The software also lets her set up auto-replies when she’s out of the office and easily copy-paste answers to common questions. If multiple CHWs are working together, they could give clients a single number and use Front to assign texts to the most appropriate staff member.</p>
+
+  <img src="/img/IMG_0482.jpg">
+
+  <p>We just wrapped up one trip to Richmond and will return the week of Labor Day. Keep in touch!</p>
+
+</div>
