@@ -336,19 +336,13 @@ footer p {
 ** GALERIE SLIDER
 **
 */
-.galerie {
-  /*min-height: 400px;*/
-  position: relative;
-  background-size:cover;
-  overflow: hidden;
-}
-.galerie .item {
+.galerie {}
+.galerie .galerie-item {
   width: 100%;
   height:auto;
   display: none;
 }
-.galerie .item.on {
-  position: relative;
+.galerie .galerie-item.galerie-current {
   display: block;
 }
 .galerie-button {

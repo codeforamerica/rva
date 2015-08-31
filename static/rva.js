@@ -9,26 +9,39 @@ function hideMailChimpSignup(event) {
 }
 
 function next_slide() {
-  galerie.next();
+  galerie.nextItem();
   updateTracker();
 }
 
 function previous_slide() {
-  galerie.prev();
+  galerie.previousItem();
   updateTracker();
 }
 
 function updateTracker() {
-  var state = galerie.state();
-  console.log(state);
-  $('.galerie-tracker').removeClass('on');
-  $('.galerie-tracker').each(function() {
-    if(parseInt($(this).attr('data-galerie-id')) === state['current-slide']-1) {
-      $(this).addClass('on');
+  var state = galerie.getState();
+  var id = state.currentElem.getAttribute('data-galerie');
+  var trackers = document.getElementsByClassName('galerie-tracker');
+  for (var i = 0; i < trackers.length; i++) {
+    trackers[i].className = 'galerie-tracker';
+    if(parseInt(trackers[i].getAttribute('data-galerie-id')) == id) {
+      console.log('found a match!');
+      trackers[i].className += ' on';
     }
-  });
+  }
 }
 
-$(document).ready(function() {
+function createTrackers() {
+  for (var i = 0; i < galerie.items.length; i++) {
+    var tracker = document.createElement('div');
+    tracker.className = 'galerie-tracker';
+    if(!i) { tracker.className += ' on'; }
+    tracker.setAttribute('data-galerie-id', i);
+    document.getElementById('galerie-tracker-wrapper').appendChild(tracker);
+  }
+}
+
+window.onload = function() {
   galerie.init();
-});
+  createTrackers();
+}
