@@ -330,3 +330,43 @@ footer p {
   footer { background-color:white; }
   footer p { color:black; }
 }
+
+/*
+**
+** GALERIE SLIDER
+**
+*/
+.galerie {
+  /*min-height: 400px;*/
+  position: relative;
+  background-size:cover;
+  overflow: hidden;
+}
+.galerie .item {
+  width: 100%;
+  height:auto;
+  display: none;
+}
+.galerie .item.on {
+  position: relative;
+  display: block;
+}
+.galerie-button {
+  font-size: 0.8em;
+  background-color: #399fd3;
+  color: #fff;
+}
+#galerie-tracker-wrapper {
+  text-align: right;
+  padding: 5px 0;
+}
+.galerie-tracker {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: #c0c0c0;
+  margin-left: 3px;
+}
+.galerie-tracker.on {
+  background-color: steelblue;
+}
