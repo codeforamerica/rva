@@ -167,6 +167,15 @@ blockquote span {
   }
 }
 
+#personas {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 
 
 .row {
