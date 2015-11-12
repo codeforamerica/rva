@@ -7,7 +7,7 @@
 
     <h2>The Challenge</h2>
 
-    <p>Community health workers in Richmond told us that texting is a convenient way for clients to ask them questions, but they don’t use it much because giving out their personal phone numbers would mean receiving large numbers of texts at all hours. As an experiment, we set up a third party web application called FrontApp for one CHW, Shikita. It allows her to send and receive texts on Front’s website instead of her phone. The software also lets her set up auto-replies when she’s out of the office and easily copy-paste answers to common questions. If multiple CHWs are working together, they could give clients a single number and use Front to assign texts to the most appropriate staff member.</p>
+    <p>Community health workers in Richmond told us that texting is a convenient way for clients to ask them questions, but they don’t use it much because giving out their personal phone numbers would mean receiving large numbers of texts at all hours. As an experiment, we set up a third party web application called FrontApp for one CHW, Shikita. It allows her to send and receive texts on Front’s website instead of her phone. <blockquote>“one of our coordinators said we can’t track down this patient. All their numbers weren’t working. So we called the clinic but the clinic wasn’t answering their phones. It would be great if we could see the clinic’s records on this person’s phone number.”<span>~ Sanchita Dasgupta, Access Now</span></blockquote>The software also lets her set up auto-replies when she’s out of the office and easily copy-paste answers to common questions. If multiple CHWs are working together, they could give clients a single number and use Front to assign texts to the most appropriate staff member.</p>
 
     <p>Richmond’s network of low-cost clinics and care programs do great work caring for patients without insurance. But both patients and providers told us that the time and effort required to get an appointment discourages many people from using those services. Funding and clinical capacity are certainly part of the reason for wait times, but we also heard that the application process itself was often slow and frustrating for everyone involved. In order to focus limited resources on those who need it most, almost all safety net providers have an eligibility screening process that determines whether a patient is eligible for free or discounted care (the exception is Care-A-Van, a Bon Secours mobile clinic program). Often, the organization’s funders shape the eligibility criteria and conduct audits, so it’s important to document the decision.</p>
 
@@ -133,13 +133,32 @@
       <p>Despite all of our research, what we built is based on our assumptions, both explicit and implicit, about what users want and need. Only those users can show us which are right and which are wrong, and we wanted to get that feedback early and often so that we could make sure what we built works for them. From May onward, our trips to Richmond focused on showing our prototype application to potential users and letting them navigate through it without too much direction, asking them about their expectations and thoughts at each step.</p>
 
       <p>We focused on people in three different roles.</p>
-      
-      <ul>
-        <li>Screeners: the staff who review applications and determine whether a patient is eligible for care or where she falls on a sliding scale.</li>
-        <li>Navigators: people who aren’t screeners, but help patients apply for health services. They include case managers and community health workers.</li>
-        <li>Administrators: the leadership of the organizations we’re working with. They probably won’t use the application frequently themselves, but they can give us feedback on whether the application fits their organization’s larger goals and meets their funders’ requirements.</li>
-      </ul>
 
+    </div>
+
+    <section id="personas">
+      <div class="row">
+        <div class="block-4 block-padding">
+          <img class="quickscreen-icon" src="/img/eoyr/persona_screener.svg">
+          <h3>Screeners</h3>
+          <p>The staff who review applications and determine whether a patient is eligible for care or where she falls on a sliding scale.</p>
+        </div>
+        <div class="block-4 block-padding">
+          <img class="quickscreen-icon" src="/img/eoyr/persona_navigator.svg">
+          <h3>Navigators</h3>
+          <p>People who aren’t screeners, but help patients apply for health services. They include case managers and community health workers.</p>
+        </div>
+        <div class="block-4 block-padding">
+          <img class="quickscreen-icon" src="/img/eoyr/persona_admin.svg">
+          <h3>Administrators</h3>
+          <p>The leadership of the organizations we’re working with. They probably won’t use the application frequently themselves, but they can give us feedback on whether the application fits their organization’s larger goals and meets their funders’ requirements.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container">
+      
       <p>Much of the user feedback focuses on UI details. For example, it doesn’t make sense to ask about the spouse’s employment status if the patient isn’t married. Or a dropdown for phone number type (home, cell, work, etc) would be easier than a text field. We want to fix these issues as quickly as possible to eliminate potential pain points. But most important are the big questions: What would you use this for? How does it aid or hinder your goals? What would prevent you from using the software today? What would make you want to start using it immediately?</p>
 
       <p>Here are a few of the lessons that shaped our thinking the most:</p>
@@ -159,7 +178,6 @@
 
       <ul>
         <li>“I love it, to be honest with you. I need it now. I really do. I need it now.” --Shikita Taylor, Community Health Advocate, RCHD Resource Centers</li>
-        <li>“one of our coordinators said we can’t track down this patient. All their numbers weren’t working. So we called the clinic but the clinic wasn’t answering their phones. It would be great if we could see the clinic’s records on this person’s phone number.”--Sanchita Dasgupta, Access Now</li>
         <li>“It would allow me to get more information in a more streamlined way to multiple referrals, and I like being able to compare referral options while talking to the patient.”--Kara Weiland, Social Worker, Bon Secours Emergency Department</li>
         <li>“The comment box, I love that part, where we made a comment and they sent a comment back.  Then we don't have to play phone tag.”--Shikita Taylor, Community Health Advocate, RCHD Resource Centers</li>
       </ul>
