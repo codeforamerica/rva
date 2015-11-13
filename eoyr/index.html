@@ -19,57 +19,44 @@ weight: 6
     <header class="header">
         <div class="container">
             <h1 id="main-title"><span>Team RVA</span></h1>
-            {% include eoyr_toc.html %}
+            {% include eoyr/toc.html %}
         </div>
     </header>
-    <div class="container">
 
-        {% include eoyr_executiveSummary.html %}
+    {% include eoyr/nav.html %}    
+
+    <div class="container" id="hello">
+
+        {% include eoyr/executiveSummary.html %}
         
     </div>
 
-    <hr>
+    <hr id="team">
+
+    {% include eoyr/team.html %}
+
+    <hr id="research">
 
     <div class="container">
 
-        <!-- <blockquote>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-        <span>~ Thomas Jefferson</span>
-        </blockquote> -->
-    </div>
-
-    {% include eoyr_team.html %}
-
-    <div class="container">
-        {% include eoyr_partners.html %}
-    </div>
-
-    <hr>
-
-    <div class="container">
-
-        {% include eoyr_research.html %}
+        {% include eoyr/research.html %}
 
     </div>
 
-    {% include eoyr_projects.html %}
+    {% include eoyr/projects.html %}
 
-    {% include eoyr_quickscreen.html %}
+    {% include eoyr/quickscreen.html %}
 
-    <div class="container">
+    <div class="container" id="status">
 
-        {% include eoyr_conclusion.html %}
+        {% include eoyr/conclusion.html %}
 
         <img src="/img/eoyr/danny-presentation.jpg">
 
-        {% include eoyr_thanks.html %}
+        {% include eoyr/thanks.html %}
         
     </div>
 
-    <!-- <img src="/img/eoyr/codeacross.jpg"> -->
-
-    <div class="container">
-        
-    </div>
+    {% include eoyr/footer.html %}
 </body>
 </html>

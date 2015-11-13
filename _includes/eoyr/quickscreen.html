@@ -1,5 +1,6 @@
-<div class="container">
-  <h1>Quickscreen</h1>
+<div class="container" id="qs">
+  <span class="float-right"><a class="project-link" href="http://quickscreenrva.com"><i class="fa fa-link"></i> quickscreenrva.com</a></span>
+  <h1 class="project-title">Quickscreen</h1>
 </div>
 
 <section id="quickscreen">
@@ -33,8 +34,11 @@
     </a>
 
     <p><strong>It’s redundant.</strong> If patients visit another provider, they usually have to go through a separate screening, even though the applications ask for most of the same information. A few providers share a form, but most don’t. Here’s an example:</p>
-    
-    [graphic about redundant screening]
+  </div>
+
+  {% include eoyr/redundantScreenings.html %}
+
+  <div class="container">
 
     <p><strong>What this means.</strong> For care providers, the status quo means spending lots of staff time on screening that could otherwise be spent on something more directly related to patient care. For patients, it means delays getting into care (which can mean that the ER is a better option). And the confusion and frustration damages patients’ trust in the healthcare system. Community members told us that application processes are confusing, it’s hard to get accurate and complete information about eligibility, people don’t understand why their applications are rejected, and it’s demoralizing to have to prove low income again and again.</p>
 
@@ -49,85 +53,9 @@
     <p>We built a web application that we think can improve this process. Here’s how it works:</p>
   </div>
 
-    <div class="row">
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_computer.svg">
-      <p><strong>Online applications</strong><br>
-      Patients often start an application at a clinic but don’t have all the necessary documentation, so they have to go back to the office another day--not always easy with limited transportation options. Our application has patient profiles containing the questions currently found on the paper application forms for the health services we’re working with, and allows users to upload images of income proof documents like pay stubs.  Ideally, this would replace paper applications. Patients could fill out their entire application at home or with a social worker or community health worker, and go to the office only for medical appointments.<br>
-      [screenshots of patient details]
-      </p>
-      </div>
-      
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_eligibility.svg">
-      <p><strong>Eligibility estimates</strong><br>
-      Once a patient’s profile is filled out, we use each organization’s eligibility criteria to estimate whether the patient is likely to be eligible for care at each one, and where he might fall on the sliding scale, if applicable. This can help navigators decide where to refer someone and help screening staff make decisions more quickly.
-      </p>
-      </div>
+    {% include eoyr/quickscreenFeatures.html %}
 
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_prescreen.svg">
-      <p><strong>Pre-screening</strong><br>
-      Because the process can be so long and frustrating, patients are sometimes reluctant to apply for services when they’re not sure if they’re likely to qualify. Meanwhile, providers told us that patients sometimes wait hours for a financial screening, only to find out that they’re not eligible, and the providers spend significant time processing those applications. The pre-screening tool allows patients to answer the most basic eligibility questions and tells them whether they’re likely to qualify. It’s not a definitive answer, but it can help the patient figure out whether it’s worth the time to fill out a complete application, which could be up to 100 questions. We hope this will encourage patients who qualify to apply, and save both patients and providers time by discouraging applications from patients who definitely won’t qualify.<br>
-      [screenshots of prescreening]
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_share.svg">
-      <p><strong>Share screening data</strong><br>
-      Right now, patients who need care from more than one organization usually have to start the eligibility screening process from scratch at each one. Our application allows organizations to share a patient’s information so that she doesn’t have to provide it again. Initially, a patient’s information is only available to users at the organization that created the profile, but if that organization wants to refer the patient somewhere else, they can use this feature to make the profile available to users there.<br>
-      [screenshots of sharing]<br>
-      Was this address updated last week or two years ago? Who can I contact if I have questions about an application filled out elsewhere? What other organizations have screened this patient? This section tracks changes to each patient’s profile, allowing users to check when each piece of information was added and by whom.<br>
-      [screenshots of edit history]
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_history.svg">
-      <p><strong>Track referrals and screening results over time</strong><br>
-      This view allows users to see any past referrals or screening results for a patient.<br>
-      [screenshots of referral history]
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_password.svg">
-      <p><strong>Varying permission levels</strong><br>
-      The application has different permissions for patients (who can see only their own data), staff (who see all patients), and administrators (who can adjust settings for an organization).
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_export.svg">
-      <p><strong>Export data</strong><br>
-      A patient’s information can be exported in PDF or CSV format.
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_mobile.svg">
-      <p><strong>Mobile-friendly</strong><br>
-      The application also works on smartphones or tablets. For example, community health workers could use it while visiting patients in their homes.<br>
-      [screenshots of mobile version]
-      </p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_translation.svg">
-      <p><strong>Translations</strong><br>
-      The application has a full Spanish version, and technical infrastructure that makes it easy to add other languages  later.</p>
-      </div>
-
-      <div class="block-3 block-padding">
-      <img class="quickscreen-icon" src="/img/eoyr/proj_lock.svg">
-      <p><strong>Privacy & HIPAA compliance</strong><br>
-      All patients sign a consent form before their information is entered into the application. Code for America, as a non-covered entity, has a Business Associate Agreement with the Richmond City Health District. Covered entity partners sign a Memorandum of Understanding.
-      </p>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="container" id="lessons">
       <h2>Lessons</h2>
 
       <p>Despite all of our research, what we built is based on our assumptions, both explicit and implicit, about what users want and need. Only those users can show us which are right and which are wrong, and we wanted to get that feedback early and often so that we could make sure what we built works for them. From May onward, our trips to Richmond focused on showing our prototype application to potential users and letting them navigate through it without too much direction, asking them about their expectations and thoughts at each step.</p>
@@ -136,26 +64,7 @@
 
     </div>
 
-    <section id="personas">
-      <div class="row">
-        <div class="block-4 block-padding">
-          <img class="quickscreen-icon" src="/img/eoyr/persona_screener.svg">
-          <h3>Screeners</h3>
-          <p>The staff who review applications and determine whether a patient is eligible for care or where she falls on a sliding scale.</p>
-        </div>
-        <div class="block-4 block-padding">
-          <img class="quickscreen-icon" src="/img/eoyr/persona_navigator.svg">
-          <h3>Navigators</h3>
-          <p>People who aren’t screeners, but help patients apply for health services. They include case managers and community health workers.</p>
-        </div>
-        <div class="block-4 block-padding">
-          <img class="quickscreen-icon" src="/img/eoyr/persona_admin.svg">
-          <h3>Administrators</h3>
-          <p>The leadership of the organizations we’re working with. They probably won’t use the application frequently themselves, but they can give us feedback on whether the application fits their organization’s larger goals and meets their funders’ requirements.</p>
-        </div>
-      </div>
-    </section>
-
+    {% include eoyr/quickscreenPersonas.html %}
 
     <div class="container">
       
@@ -163,15 +72,28 @@
 
       <p>Here are a few of the lessons that shaped our thinking the most:</p>
 
-      <ul>
-        <li>HIPAA: People are often pretty nervous about projects that involve sharing health data, because they’re concerned about violating HIPAA. We found that this is a hurdle, but not an insurmountable one. We developed a business associate agreement and a patient consent form with the help of a HIPAA-specialist lawyer, and we’re working with a company called Aptible that specializes in HIPAA-compliant web applications to make sure we have all the necessary security features.</li>
-        <li>Avoiding double data entry: When we showed our prototype to potential users, we realized that their biggest barrier to using it was the potential for duplicate data entry. Some clinics typically have the patient fill out a paper form in the office and then a staff member types all the information into their electronic health record system. If we asked those staff members to then enter the same data into our application as well, we’d be adding a lot of extra work, so it’s important to find ways to either integrate with their existing software or change workflows to avoid duplication.</li>
-        <li>Form variations across organizations: One thing we’ve been thinking about a lot is how application forms vary across organizations. For example, this chart shows all the different types of income that organizations might ask about. Some forms ask about food stamps, some ask about social security, one asks you to separate out any income earned as tips. There are hundreds of unique questions, but they’re all really getting at the same thing. As we tried to build a web form that asked all the necessary questions, we talked to our partners a lot about whether all of these questions are really necessary and whether there are ways we could make the forms more similar.</li>
-        <li>Referral and screening result history: Community health workers and social workers in Richmond already spend a lot of time referring patients to care programs, but right now, they usually can’t do much more than hand out fliers and encourage the patient to apply. Once it’s online, they can actually get the process started. Those users were really interested in figuring out whether a referral was successful. Did the organization receive the application, and is the patient eligible? And care providers are really interested in knowing where else a patient has been seen, so that they can make sure they’re not duplicating care. This feedback led us to build the referral and screening history page.</li>
-        <li>Eligibility information in one place: Users were consistently excited by the eligibility estimates because there’s not currently an easy way to compare eligibility criteria across organizations. We think this is really valuable for people making referrals, but it’s only useful if the information can be kept up to date.</li>
-      </ul>
+      <h3>HIPAA</h3>
+
+      <p>People are often pretty nervous about projects that involve sharing health data, because they’re concerned about violating HIPAA. We found that this is a hurdle, but not an insurmountable one. We developed a business associate agreement and a patient consent form with the help of a HIPAA-specialist lawyer, and we’re working with a company called Aptible that specializes in HIPAA-compliant web applications to make sure we have all the necessary security features.</p>
+      
+      <h3>Avoiding double data entry</h3>
+
+      <p>When we showed our prototype to potential users, we realized that their biggest barrier to using it was the potential for duplicate data entry. Some clinics typically have the patient fill out a paper form in the office and then a staff member types all the information into their electronic health record system. If we asked those staff members to then enter the same data into our application as well, we’d be adding a lot of extra work, so it’s important to find ways to either integrate with their existing software or change workflows to avoid duplication.</p>
+
+      <h3>Form variations across organizations</h3>
+
+      <p>One thing we’ve been thinking about a lot is how application forms vary across organizations. For example, this chart shows all the different types of income that organizations might ask about. Some forms ask about food stamps, some ask about social security, one asks you to separate out any income earned as tips. There are hundreds of unique questions, but they’re all really getting at the same thing. As we tried to build a web form that asked all the necessary questions, we talked to our partners a lot about whether all of these questions are really necessary and whether there are ways we could make the forms more similar.</p>
+
+      <h3>Referral and screening result history</h3>
+
+      <p>Community health workers and social workers in Richmond already spend a lot of time referring patients to care programs, but right now, they usually can’t do much more than hand out fliers and encourage the patient to apply. Once it’s online, they can actually get the process started. Those users were really interested in figuring out whether a referral was successful. Did the organization receive the application, and is the patient eligible? And care providers are really interested in knowing where else a patient has been seen, so that they can make sure they’re not duplicating care. This feedback led us to build the referral and screening history page.</p>
+      
+      <h3>Eligibility information in one place</h3>
+
+      <p>Users were consistently excited by the eligibility estimates because there’s not currently an easy way to compare eligibility criteria across organizations. We think this is really valuable for people making referrals, but it’s only useful if the information can be kept up to date.</p>
 
       <h2>Feedback</h2>
+
       <p>After dozens of user research sessions, we’ve received a great deal of qualitative user feedback on both the application and our process. Here are a few of the highlights.</p>
 
       <p>Users are excited to start using Quickscreen.</p>
