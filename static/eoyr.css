@@ -120,7 +120,7 @@ blockquote span {
   -moz-background-size: cover; 
   -o-background-size: cover; 
   background-size: cover;
-  padding: 3em 0;
+  padding: 4em 0 8em;
   position: relative;
   z-index: 20;
 }
@@ -145,6 +145,13 @@ blockquote span {
   padding: 1em 1em 1em 3em;
   margin-left: -150px;
   font-weight: 900;
+}
+.toc a {
+  color: white;
+  border-color: transparent;
+}
+.toc a:hover {
+  border-color: white;
 }
 
 #hello {
@@ -218,7 +225,7 @@ blockquote span {
   height: auto;
   margin: auto;
 }
-@media (min-width:700px) {
+@media (min-width:900px) {
   img.half {
     width:50%;
     float:left;
@@ -243,6 +250,21 @@ blockquote span {
 
 #status {
   padding-top: 3em;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width:100%;
+  margin-bottom: 2em;
+  background: #c0c0c0;
+}
+.video iframe {
+  position: absolute;
+  width:100%;
+  height:100%;
 }
 
 /*

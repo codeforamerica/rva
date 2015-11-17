@@ -6,7 +6,7 @@
 <section id="quickscreen">
   <div class="container">
 
-    <h2>The Challenge</h2>
+    <h2 id="qs-background">The Challenge</h2>
 
     <p>Community health workers in Richmond told us that texting is a convenient way for clients to ask them questions, but they don’t use it much because giving out their personal phone numbers would mean receiving large numbers of texts at all hours. As an experiment, we set up a third party web application called FrontApp for one CHW, Shikita. It allows her to send and receive texts on Front’s website instead of her phone. <blockquote>“one of our coordinators said we can’t track down this patient. All their numbers weren’t working. So we called the clinic but the clinic wasn’t answering their phones. It would be great if we could see the clinic’s records on this person’s phone number.”<span>~ Sanchita Dasgupta, Access Now</span></blockquote>The software also lets her set up auto-replies when she’s out of the office and easily copy-paste answers to common questions. If multiple CHWs are working together, they could give clients a single number and use Front to assign texts to the most appropriate staff member.</p>
 
@@ -42,21 +42,27 @@
 
     <p><strong>What this means.</strong> For care providers, the status quo means spending lots of staff time on screening that could otherwise be spent on something more directly related to patient care. For patients, it means delays getting into care (which can mean that the ER is a better option). And the confusion and frustration damages patients’ trust in the healthcare system. Community members told us that application processes are confusing, it’s hard to get accurate and complete information about eligibility, people don’t understand why their applications are rejected, and it’s demoralizing to have to prove low income again and again.</p>
 
-    <h2>Goals</h2>
+    <h2 id="qs-goals">Goals</h2>
     <ol>
       <li>Decrease the amount of time it takes patients to get through the eligibility screening process.</li>
       <li>Increase patient trust and satisfaction.</li>
     </ol>
 
-    <h2>The Application</h2>
+    <h2 id="qs-application">The Application</h2>
     
     <p>We built a web application that we think can improve this process. Here’s how it works:</p>
+
+    <img src="/img/browser.png" style="display:block;">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/unJbbYU4egw" frameborder="0" allowfullscreen></iframe>
+    </div>
+
   </div>
 
     {% include eoyr/quickscreenFeatures.html %}
 
     <div class="container" id="lessons">
-      <h2>Lessons</h2>
+      <h2 id="qs-lessons">Lessons</h2>
 
       <p>Despite all of our research, what we built is based on our assumptions, both explicit and implicit, about what users want and need. Only those users can show us which are right and which are wrong, and we wanted to get that feedback early and often so that we could make sure what we built works for them. From May onward, our trips to Richmond focused on showing our prototype application to potential users and letting them navigate through it without too much direction, asking them about their expectations and thoughts at each step.</p>
 
@@ -92,7 +98,7 @@
 
       <p>Users were consistently excited by the eligibility estimates because there’s not currently an easy way to compare eligibility criteria across organizations. We think this is really valuable for people making referrals, but it’s only useful if the information can be kept up to date.</p>
 
-      <h2>Feedback</h2>
+      <h2 id="qs-feedback">Feedback</h2>
 
       <p>After dozens of user research sessions, we’ve received a great deal of qualitative user feedback on both the application and our process. Here are a few of the highlights.</p>
 
